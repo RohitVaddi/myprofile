@@ -1,0 +1,305 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #833e23;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #833e23;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: 'Baloo 2', cursive;
+    letter-spacing: 1px;
+    height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    min-height: 90vh;
+    width: 60%;
+    background: linear-gradient( to right bottom, rgba(224, 218, 218, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    animation: zoomin 2s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 1%;
+    left: 15%;
+    animation: movedown 3s linear 1;
+    /* animation-delay: 1s; */
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.circle2 {
+    bottom: 1%;
+    right: 15%;
+    animation: moveup 3s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.left {
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.574);
+    flex: 1;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.user img {
+    animation: zoomin 2s linear 1;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+h1,
+.user p {
+    cursor: pointer;
+    animation: movedown 2s linear 1;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.info {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 0.5rem 4rem;
+    align-items: center;
+    animation: moveright 3s linear 1;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.info img {
+    border-radius: 30%;
+}
+
+.info h2 {
+    padding: 0rem 1rem;
+}
+
+.caption {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    margin: 0rem 2rem;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+    animation: moveright 3s linear 1;
+    animation-delay: 7s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.caption img {
+    position: absolute;
+    top: 15%;
+    right: 7%;
+}
+
+.caption h2 {
+    width: 40%;
+    color: #833e23;
+    font-weight: 600;
+    text-align: left;
+}
+
+.right {
+    flex: 2;
+}
+
+.study {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.study img {
+    margin-top: 1rem;
+    animation: zoomin 2s linear 1;
+    animation-delay: 8s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.study h1 {
+    animation: movedown 3s linear 1;
+    animation-delay: 8s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient( to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 0.5rem 3rem;
+    padding: 0.5rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.333);
+    /* justify-content: space-between; */
+    text-align: left;
+    animation: moveleft 3s linear 1;
+    animation-delay: 11s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.hobby img {
+    animation: zoomin 2s linear 1;
+    animation-delay: 14s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.hobby h1 {
+    animation: movedown 2s linear 1;
+    animation-delay: 14s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.hobbies {
+    background: linear-gradient( to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.333);
+    border-radius: 1rem;
+    margin: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    animation: moveleft 3.5s linear 1;
+    animation-delay: 16s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.hobbies h3 {
+    margin: 0.5rem 0rem;
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-1300%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(500%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        transform: translatex(-500%);
+        visibility: visible;
+    }
+    25% {
+        transform: translatex(0);
+        visibility: visible;
+    }
+    50% {
+        transform: translatex(-100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translatex(0);
+        visibility: visible;
+    }
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translatex(500%);
+        visibility: visible;
+    }
+    25% {
+        transform: translatex(0);
+        visibility: visible;
+    }
+    50% {
+        transform: translatex(50%);
+        visibility: visible;
+    }
+    100% {
+        transform: translatex(0);
+        visibility: visible;
+    }
+}
